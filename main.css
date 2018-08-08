@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #2FADE2;
+    font-family: Muli, Helvetica,Arial,sans-serif;
+    text-align: center;
+}
+
+div{
+    padding: 30px 0px 30px 0px;
+}
+
+nav {
+    overflow: hidden;
+    background: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+nav li {
+    float: right;
+    display: block;
+    padding: 14px 16px;
+}
+
+nav a{
+    text-decoration: none;
+    font size: 15px;
+    color: #E88649;
+}
+
+.banner {
+    background-color: #ffffff;
+    padding: 150px 10px 20px 30px;
+}
+
+.banner img {
+    border: 1px solid #021a40;
+    height: 80px;
+    width: 80px;
+    border-radius: 12px;
+}
+
+.banner h1{
+    font-size: 40px;
+    color: #E88649;
+    margin-top: 20px;
+
+}
+
+.banner h2{
+    font-size: 25px;
+    color: #2FADE2;
+    font-weight: normal;
+    margin: 20px 50px 30px 50px;
+}
+
+.banner button {
+    padding: 12px 20px;
+    color: #ffffff;
+    background-color: #E88649;
+    font-size: 17px;
+    border: none;
+    border-radius: 12px;
+}
+
+.mission-statement {
+    margin: 20px;
+    color: #ffffff;
+}
+
+.mission-statement h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.mission-statement h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.mission-statement h3 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.mission-statement ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mission-statement img{
+    height: 400px;
+    width: 400px;
+    padding-top: 50px;
+}
+
+.content-list {
+    background-color: #ffffff;
+}
+
+.content-list ul {
+    list-style-type: none;
+    padding: 30px 20px 20px 40px;
+    margin: 0;
+}
+
+.content-list li {
+    padding-bottom: 30px;
+}
+
+.content-list h1 {
+    font-size: 35px;
+    color: #E88649;
+}
+
+.content-list h2 {
+    font-size: 25px;
+}
+
+.content-list a {
+    color: #E88649;
+    text-decoration: none;
+}
+
+.sponsors {
+    padding: 20px 10px;
+}
+
+.sponsors ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sponsors li {
+    padding-bottom: 50px;
+}
+
+.sponsors h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.sponsors h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0px 30px;
+}
+
+.sponsors a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sponsors img {
+    height: 60%;
+    width: 60%;
+}
+
+.contact-section {
+    background-color: #ffffff;
+    padding: 20px 50px 10px 50px;
+}
+
+footer {
+    padding: 30px;
+}
+footer h1{
+    font-weight: normal;
+    font-size: 15px
+}
+
+.contact-section h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #E88649;
+    margin-bottom: 50px;
+}
+
+.contact-section h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-section p {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.contact-section a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 500px) {
+    .content-list h2 {
+        font-size: 25px;
+        margin: 0px 70px 20px 70px;
+    }
+}
+
+@media screen and (min-width: 644px) {
+    header h2{
+        font-size: 25px;
+        color: #2FADE2;
+        font-weight: normal;
+        margin: 20px 100px 30px 100px;
+    }
+
+    .content-list h2 {
+        font-size: 25px;
+        margin: 0px 150px 20px 150px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        padding: 150px 50px 50px 50px;
+    }
+
+    header img {
+        border: 1px solid #021a40;
+        height: 80px;
+        width: 80px;
+        border-radius: 12px;
+    }
+
+    header h1{
+        font-size: 40px;
+        color: #E88649;
+        margin-top: 20px;
+    }
+
+    header h2{
+        font-size: 25px;
+        color: #2FADE2;
+        font-weight: normal;
+        margin: 20px 150px 30px 150px;
+    }
+
+    .mission-statement h1 {
+        font-size: 50px;
+    }
+
+    .mission-statement h2 {
+        margin: 20px 75px;
+    }
+    .mission-statement h3 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .mission-statement li {
+        display: inline-block;
+        margin: 0px 50px;
+    }
+
+    .mission-statement img{
+        height: 180px;
+        width: 180px;
+        padding-top: 50px;
+    }
+
+    .content-list ul {
+        padding: 0px;
+    }
+
+    .content-list li {
+        display: inline-block;
+        width: 30%;
+    }
+
+    .content-list h1 {
+        font-size: 35px;
+    }
+
+    .content-list h2 {
+        font-size: 20px;
+        margin: 20px 25px;
+    }
+
+}
