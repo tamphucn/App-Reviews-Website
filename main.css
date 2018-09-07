@@ -10,29 +10,36 @@ div{
     padding: 30px 0px 30px 0px;
 }
 
-nav {
+.navbar {
     overflow: hidden;
     background: 0;
     z-index: 100;
     position: fixed;
     width: 100%;
+    transition: 0.3s;
+    background-color: #ffffff;
 }
 
-nav li {
-    float: right;
+.navbar li {
     display: block;
+    float: right;
     padding: 14px 16px;
 }
 
-nav a{
+.navbar a{
     text-decoration: none;
     font size: 15px;
     color: #E88649;
 }
 
+.scrolled{
+  background-color: dodgerblue;
+  transition: 0.3s;
+}
+
 .banner {
-    background-color: #ffffff;
-    padding: 150px 10px 20px 30px;
+    background-image: url(img/background.jpg);
+    padding: 150px 10px 50px 30px;
 }
 
 .banner img {
@@ -46,7 +53,6 @@ nav a{
     font-size: 40px;
     color: #E88649;
     margin-top: 20px;
-
 }
 
 .banner h2{
@@ -58,11 +64,15 @@ nav a{
 
 .banner button {
     padding: 12px 20px;
-    color: #ffffff;
     background-color: #E88649;
-    font-size: 17px;
     border: none;
     border-radius: 12px;
+}
+
+.banner a {
+    font-size: 17px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .mission-statement {
@@ -76,14 +86,12 @@ nav a{
 }
 
 .mission-statement h2 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: normal;
+    margin-top: 90px;
+    text-align: left;
 }
 
-.mission-statement h3 {
-    font-size: 30px;
-    margin-top: 10px;
-}
 
 .mission-statement ul {
     list-style-type: none;
@@ -91,10 +99,16 @@ nav a{
     margin: 0;
 }
 
+.mission-statement li {
+    display: inline-block;
+}
+
 .mission-statement img{
-    height: 400px;
-    width: 400px;
+    height: 150px;
+    width: 150px;
     padding-top: 50px;
+    padding-right: 20px;
+    float: left;
 }
 
 .content-list {
@@ -109,20 +123,38 @@ nav a{
 
 .content-list li {
     padding-bottom: 30px;
+    padding-top: 60px;
 }
 
 .content-list h1 {
-    font-size: 35px;
+    font-size: 40px;
     color: #E88649;
 }
 
 .content-list h2 {
-    font-size: 25px;
+    font-size: 35px;
+    color: #E88649;
 }
+
+.content-list h3 {
+    font-size: 20px;
+    margin: 0px 30px;
+}
+
+.content-list h4 {
+    font-size: 20px;
+    margin: 0px 30px;
+}
+
 
 .content-list a {
     color: #E88649;
     text-decoration: none;
+}
+
+.content-list img{
+    height: 150px;
+    width: 150px;
 }
 
 .sponsors {
@@ -175,73 +207,133 @@ footer h1{
     font-size: 15px
 }
 
+.contact-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
 .contact-section h1{
     font-size: 40px;
     font-weight: bold;
     color: #E88649;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    text-align: left;
 }
 
 .contact-section h2 {
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
 }
 
 .contact-section p {
     font-size: 20px;
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 50px;
+    text-align: left;
 }
 
 .contact-section a{
     text-decoration: none;
     font-size: 20px;
+    color: #E88649;
 }
 
-@media screen and (min-width: 500px) {
-    .content-list h2 {
-        font-size: 25px;
-        margin: 0px 70px 20px 70px;
-    }
+.contact-section img {
+    height: 100%;
+    width: 100%;
 }
 
-@media screen and (min-width: 644px) {
-    header h2{
-        font-size: 25px;
-        color: #2FADE2;
-        font-weight: normal;
-        margin: 20px 100px 30px 100px;
-    }
-
-    .content-list h2 {
-        font-size: 25px;
-        margin: 0px 150px 20px 150px;
-    }
+#container {
+    height: 665px;
 }
 
-@media screen and (min-width: 800px) {
-    header {
-        padding: 150px 50px 50px 50px;
+.project-section  {
+    background-color: #ffffff;
+    padding: 0px 10px 50px 30px;
+}
+
+.project-banner {
+    background-image: url(img/background.jpg);
+    padding: 150px 10px 40px 30px;
+}
+
+.project-section img {
+    border: 1px solid #021a40;
+    height: 150px;
+    width: 150px;
+    border-radius: 12px;
+}
+
+.project-section h1{
+    font-size: 40px;
+    color: #E88649;
+    margin-top: 20px;
+    margin-bottom: 75px;
+}
+
+.project-section h2 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.project-section h3 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: -10px;
+}
+
+.project-section h4 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.project-section h5{
+    font-size: 60px;
+    color: #E88649;
+    margin-top: 0px;
+    margin-bottom: -15px;
+}
+
+.project-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+@media screen and (min-width: 675px) {
+    .banner {
+        padding: 150px 50px 80px 50px;
     }
 
-    header img {
+    .banner img {
         border: 1px solid #021a40;
         height: 80px;
         width: 80px;
         border-radius: 12px;
     }
 
-    header h1{
+    .banner h1{
         font-size: 40px;
         color: #E88649;
         margin-top: 20px;
     }
 
-    header h2{
+    .banner h2{
         font-size: 25px;
         color: #2FADE2;
         font-weight: normal;
-        margin: 20px 150px 30px 150px;
+        margin: 20px 100px 30px 100px;
     }
 
     .mission-statement h1 {
@@ -249,35 +341,41 @@ footer h1{
     }
 
     .mission-statement h2 {
-        margin: 20px 75px;
-    }
-    .mission-statement h3 {
-        font-size: 20px;
-        margin-top: 10px;
+        margin-top: 90px;
+        text-align: left;
     }
 
+    .mission-statement ul {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
     .mission-statement li {
         display: inline-block;
         margin: 0px 50px;
     }
 
     .mission-statement img{
-        height: 180px;
-        width: 180px;
+        height: 150px;
+        width: 150px;
         padding-top: 50px;
+        float: left;
     }
 
     .content-list ul {
         padding: 0px;
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
     }
 
-    .content-list li {
-        display: inline-block;
-        width: 30%;
-    }
 
     .content-list h1 {
-        font-size: 35px;
+        font-size: 50px;
+    }
+
+    .content-list h4 {
+        margin: 0px 170px;
     }
 
     .content-list h2 {
@@ -285,4 +383,87 @@ footer h1{
         margin: 20px 25px;
     }
 
+    .sponsors ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+
+    .sponsors li {
+        padding-bottom: 50px;
+    }
+
+    .sponsors h1 {
+        font-size: 50px;
+        font-weight: bold;
+        color: #ffffff;
+        padding-bottom: 10px;
+    }
+
+    .sponsors h2 {
+        font-size: 20px;
+        font-weight: normal;
+        margin: 0px 30px;
+    }
+
+    .sponsors img {
+        height: 70%;
+        width: 70%;
+    }
+
+    .contact-section h1 {
+        font-size: 50px;
+    }
+
 }
+
+@media screen and (min-width: 903px) {
+    .banner {
+        padding: 150px 50px 110px 50px;
+    }
+
+    .banner img {
+        border: 1px solid #021a40;
+        height: 100px;
+        width: 100px;
+        border-radius: 12px;
+        margin-top: 40px;
+    }
+
+    .banner h1{
+        font-size: 50px;
+        color: #E88649;
+        margin: 20px 130px 0px 130px;
+    }
+
+    .banner h2{
+        font-size: 30px;
+        color: #2FADE2;
+        font-weight: normal;
+        margin: 20px 180px 30px 180px;
+    }
+
+    .banner button {
+        padding: 15px 25px;
+    }
+
+    .banner a {
+        font-size: 25px;
+    }
+
+    .contact-section h1 {
+        font-size: 50px;
+    }
+
+    #container {
+        height: 695px;
+    }
+
+    .contact-section img {
+        font-size: 50px;
+        height: 70%;
+        width: 70%;
+    }
